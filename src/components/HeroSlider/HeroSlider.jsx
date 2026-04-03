@@ -11,21 +11,21 @@ import './HeroSlider.css';
 
 const slides = [
   {
-    image: '/assets/Trusted Auto Upgrades.png',
+    image: '/assets/trusted-auto-upgrades.png',
     subtitle: 'Dubai\'s Trusted Auto Upgrades',
     title: 'Precision &amp; <span>Prestige</span>',
     description: 'Transform your vehicle with our premium range of top-tier accessories. From android systems to custom seat covers.',
     btnText: 'Explore Collection'
   },
   {
-    image: '/assets/interior-design.png',
+    image: '/assets/upholstery-worksa.png',
     subtitle: 'Luxury Redefined',
-    title: 'Custom <span>Interiors</span>',
+    title: 'Custom <span>upholstery works</span>',
     description: 'Bespoke designs tailored to your style. Experience the pinnacle of automotive interior craftsmanship.',
     btnText: 'View Services'
   },
   {
-    image: '/assets/camera-360.png',
+    image: '/assets/Advanced-Technology.png',
     subtitle: 'Advanced Technology',
     title: 'Smart <span>Integration</span>',
     description: 'Stay connected and safe on the road with our cutting-edge 360° cameras and OEM-integrated Android screens.',
