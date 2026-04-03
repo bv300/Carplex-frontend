@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaTiktok,  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaTiktok, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import './Footer.css';
 
 

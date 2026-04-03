@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  /* User Custom Colors */
-  --c-red-bright: #fc1412;
-  --c-gold-light: #fce46c;
-  --c-red-very-dark: #47110c;
-  --c-gray-brown: #9b8f8a;
-  --c-brown: #5a3215;
-  --c-red-dark: #79100e;
-  --c-gold-dark: #b2924d;
-  --c-red-soft: #d62f29;
+  /* ── Carplex Brand Palette ── */
+  --c-red:        #ef2c24;
+  --c-red-coral:  #fd584f;
+  --c-red-pure:   #fe0101;
+  --c-brown-dark: #260702;
+  --c-brown-deep: #4b0b02;
+  --c-brown-mid:  #6c2b02;
+  --c-gold:       #bf6e0c;
+  --c-yellow:     #fdec65;
+  --c-yellow-lt:  #fcf89f;
 
-  --bg-primary: #0a0a0a;
+  /* ── Backgrounds ── */
+  --bg-primary:   #0a0a0a;
   --bg-secondary: #111111;
-  --bg-card: #161616;
-  --bg-glass: rgba(22, 22, 22, 0.75);
-  
-  --accent: var(--c-red-bright);
-  --accent-secondary: var(--c-gold-dark);
-  --accent-dark: var(--c-red-dark);
-  --accent-glow: rgba(252, 20, 18, 0.35); /* Based on --c-red-bright */
-  
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --text-muted: var(--c-gray-brown);
-  --border: rgba(255, 255, 255, 0.08); /* slightly higher visibility */
-  --border-hover: rgba(252, 20, 18, 0.4);
-  
+  --bg-card:      #161616;
+  --bg-glass:     rgba(22, 22, 22, 0.75);
+
+  /* ── Accent System ── */
+  --accent:           #ef2c24;
+  --accent-secondary: #fcf89f;
+  --accent-dark:      #4b0b02;
+  --accent-glow:      rgba(239, 44, 36, 0.30);
+
+  /* ── Text ── */
+  --text-primary:   #ffffff;
+  --text-secondary: #c8c8c8;
+  --text-muted:     #bf6e0c;
+
+  /* ── Borders ── */
+  --border:       rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(253, 88, 79, 0.5);
+
   --radius: 16px;
   --radius-sm: 10px;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -114,7 +120,7 @@ ul {
 }
 
 .section-title span {
-  background: linear-gradient(135deg, var(--accent), #ff6b6b);
+  background: linear-gradient(135deg, var(--accent), #fdec65);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -158,9 +164,9 @@ ul {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
   filter: blur(10px);
-  transition: opacity 1.2s cubic-bezier(0.2, 1, 0.3, 1), 
-              transform 1.2s cubic-bezier(0.2, 1, 0.3, 1), 
-              filter 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: opacity 1.2s cubic-bezier(0.2, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.2, 1, 0.3, 1),
+    filter 1.2s cubic-bezier(0.2, 1, 0.3, 1);
   will-change: opacity, transform, filter;
 }
 
@@ -198,7 +204,7 @@ ul {
     font-size: 0.95rem;
     line-height: 1.5;
   }
-  
+
   .section {
     padding: 40px 0;
   }
@@ -206,7 +212,7 @@ ul {
   .section-title {
     font-size: 1.6rem;
   }
-  
+
   .container {
     padding: 0 12px;
   }

@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage/HomePage';
 import ProductsPage from './pages/ProductsPage/ProductsPage';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import PageLoader from './components/PageLoader/PageLoader';
-import MarqueeBar from './components/MarqueeBar/Marqueebar';
 import './App.css';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path="/products" element={<ProductsPage />} />
       </Routes>
       <ScrollToTop />
-      <MarqueeBar /> 
       <Footer />
     </Router>
   );

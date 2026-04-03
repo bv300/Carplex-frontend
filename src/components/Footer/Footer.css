@@ -22,7 +22,8 @@
 }
 
 .footer-logo-img {
-    height: clamp(80px, 15vw, 150px); /* Fluid scaling between 80px and 150px */
+    height: clamp(80px, 15vw, 150px);
+    /* Fluid scaling between 80px and 150px */
     width: auto;
     max-width: 100%;
     margin-bottom: 24px;
@@ -76,7 +77,7 @@
     list-style: none;
 }
 
-.footer-col ul li a, 
+.footer-col ul li a,
 .footer-col ul li span {
     color: var(--text-secondary);
     font-size: 15px;
@@ -155,11 +156,11 @@
     .footer {
         padding: 80px 0 40px;
     }
-    
+
     .footer-top {
         gap: 60px;
     }
-    
+
     .footer-top-grid {
         grid-template-columns: 1fr;
         gap: 48px;
