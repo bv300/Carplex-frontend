@@ -5,13 +5,9 @@ import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const navbarVariants = {
-    hidden: {
-        opacity: 0,
-        y: -40,
-    },
+    hidden: { opacity: 0, y: -40 },
     visible: {
-        opacity: 1,
-        y: 0,
+        opacity: 1, y: 0,
         transition: {
             duration: 0.8,
             ease: [0.25, 0.46, 0.45, 0.94],
@@ -23,17 +19,10 @@ const navbarVariants = {
 };
 
 const navLinkVariants = {
-    hidden: {
-        opacity: 0,
-        y: -12,
-    },
+    hidden: { opacity: 0, y: -12 },
     visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.5,
-            ease: [0.25, 0.46, 0.45, 0.94],
-        },
+        opacity: 1, y: 0,
+        transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] },
     },
 };
 
@@ -43,20 +32,23 @@ const Navbar = () => {
     const location = useLocation();
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 60);
-        };
+        const handleScroll = () => setScrolled(window.scrollY > 60);
         window.addEventListener('scroll', handleScroll);
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    useEffect(() => {
+        document.body.style.overflow = menuOpen ? 'hidden' : '';
+        return () => { document.body.style.overflow = ''; };
+    }, [menuOpen]);
 
     const toggleMenu = () => setMenuOpen(prev => !prev);
     const closeMenu = () => setMenuOpen(false);
 
     const handleCall = (e) => {
         e.preventDefault();
-        window.location.href = `tel:+971502292861`;
+        window.location.href = 'tel:+971502292861';
         setTimeout(() => setMenuOpen(false), 150);
     };
 
@@ -77,15 +69,29 @@ const Navbar = () => {
                     </Link>
                 </motion.div>
 
-                <div className={`nav-backdrop ${menuOpen ? 'open' : ''}`} onClick={closeMenu}></div>
+                <div className={`nav-backdrop ${menuOpen ? 'open' : ''}`} onClick={closeMenu} />
 
                 <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <motion.li variants={navLinkVariants}><Link to="/" className={isActive('/')} onClick={closeMenu}>Home</Link></motion.li>
-                    <motion.li variants={navLinkVariants}><a href="/#about" onClick={closeMenu}>About</a></motion.li>
-                    <motion.li variants={navLinkVariants}><a href="/#services" onClick={closeMenu}>Services</a></motion.li>
-                    <motion.li variants={navLinkVariants}><Link to="/products" className={isActive('/products')} onClick={closeMenu}>Products</Link></motion.li>
-                    <motion.li variants={navLinkVariants}><a href="/#contact" onClick={closeMenu}>Contact</a></motion.li>
-                    <motion.li variants={navLinkVariants}><a href="tel:+971502292861" className="nav-cta" onClick={handleCall}><FaPhoneAlt size={14} /> Call Now</a></motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <Link to="/" className={isActive('/')} onClick={closeMenu}>Home</Link>
+                    </motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <a href="/#about" onClick={closeMenu}>About</a>
+                    </motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <a href="/#services" onClick={closeMenu}>Services</a>
+                    </motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <Link to="/products" className={isActive('/products')} onClick={closeMenu}>Products</Link>
+                    </motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <a href="/#contact" onClick={closeMenu}>Contact</a>
+                    </motion.li>
+                    <motion.li variants={navLinkVariants}>
+                        <a href="tel:+971502292861" className="nav-cta" onClick={handleCall}>
+                            <FaPhoneAlt size={13} /> Call Now
+                        </a>
+                    </motion.li>
                 </ul>
 
                 <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
