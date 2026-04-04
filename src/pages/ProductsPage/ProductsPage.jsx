@@ -27,7 +27,7 @@ const useReveal = () => {
 
 const products = [
     {
-        img: '/assets/android-upgrade.png',
+        img: '/assets/Android-Upgrade-card.png',
         title: ['Android ', 'Infotainment Upgrade'],
         desc: 'Replace your outdated factory head unit with a cutting-edge Android touchscreen system. Enjoy seamless GPS navigation, Apple CarPlay, Android Auto, HD video playback, and Bluetooth connectivity — all from a sleek, modern interface.',
         icon: <FaBolt />,
@@ -58,7 +58,7 @@ const products = [
         reverse: true,
     },
     {
-        img: '/assets/seat-covers.png',
+        img: '/assets/seat-covers-a.png',
         title: ['Premium ', 'Seat Covers'],
         desc: 'Our custom-fit seat covers are crafted from top-grade leather with diamond stitching patterns, available in a range of colors and styles. Each cover is precision-cut for your exact car model, offering a factory-finish look.',
         icon: <GiCarSeat />,
@@ -73,7 +73,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/interior-design.png',
+        img: '/assets/upholstery-works.png',
         title: ['Upholstery ', 'Works'],
         desc: 'Transform your entire cabin with our bespoke interior design services. From ambient LED lighting and custom dashboard wraps to new steering wheels and premium trim panels — we create an interior that reflects your personality.',
         icon: <FaMagic />,
@@ -104,7 +104,7 @@ const products = [
         ],
     },
     {
-        img: '/assets/hero-banner.png',
+        img: '/assets/Alloy-Wheels-LEDs.png',
         title: ['Alloy Wheels ', '& LEDs'],
         desc: 'Give your car an upgraded, aggressive stance and bright clear vision with our premium alloy wheels and advanced LED lighting retrofits. Custom tailored sizes for an exact fit.',
         icon: <FaMagic />,

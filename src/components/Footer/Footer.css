@@ -185,3 +185,69 @@
         height: clamp(50px, 25vw, 75px);
     }
 }
+
+/* ── Collapsible extra services ── */
+.services-extra {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.38s ease, opacity 0.28s ease;
+}
+
+.services-extra--open {
+    max-height: 220px;
+    opacity: 1;
+}
+
+.services-extra ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0 0;
+}
+
+.services-extra ul li {
+    list-style: none;
+}
+
+.services-extra ul li a {
+    color: var(--text-secondary);
+    font-size: 15px;
+    transition: var(--transition);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-extra ul li a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* ── Toggle arrow button ── */
+.services-toggle {
+    margin-top: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.services-toggle:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px var(--accent-glow);
+}

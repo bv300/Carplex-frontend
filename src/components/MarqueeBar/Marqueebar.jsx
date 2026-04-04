@@ -6,10 +6,14 @@ const LOGO = '/assets/carples logo.png';
 const items = [
   { icon: 'diamond', text: 'Android Upgrade' },
   { icon: 'star',    text: '360° Camera' },
-  { icon: 'diamond', text: 'Seat Covers' },
+  { icon: 'diamond', text: 'Premium Seat Covers' },
   { icon: 'star',    text: 'Car Tinting' },
-  { icon: 'diamond', text: 'Interior Design' },
+  { icon: 'diamond', text: 'Upholstery Works' },
   { icon: 'star',    text: 'Alloy Wheels & LED Lights' },
+  { icon: 'diamond', text: 'Sound Horns' },
+  { icon: 'star',    text: 'Car Stereo Upgrade' },
+  { icon: 'diamond', text: 'Smart Lock Systems' },
+  { icon: 'star',    text: 'Car Batteries' },
 ];
 
 function MarqueeLap({ suffix = '' }) {

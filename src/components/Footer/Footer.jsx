@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaTiktok, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp,  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './Footer.css';
 
-
 const Footer = () => {
+    const [servicesExpanded, setServicesExpanded] = useState(false);
+
     return (
         <footer className="footer">
             <div className="container">
@@ -26,29 +28,49 @@ const Footer = () => {
                                 <li><a href="/#contact">Contact</a></li>
                             </ul>
                         </div>
+
                         <div className="footer-col">
                             <h4>Services</h4>
                             <ul>
                                 <li><Link to="/products">Android Upgrade</Link></li>
-                                <li><Link to="/products">360° Camera</Link></li>
-                                <li><Link to="/products">Seat Covers</Link></li>
-                                <li><Link to="/products">Car Tinting</Link></li>
-                                <li><Link to="/products">Interior Design</Link></li>
+                                <li><Link to="/products">360° Camera System</Link></li>
+                                <li><Link to="/products">Premium Seat Covers</Link></li>
+                                <li><Link to="/products">Premium Car Tinting</Link></li>
+                                <li><Link to="/products">Upholstery Works</Link></li>
                             </ul>
+
+                            {/* Collapsible extra services */}
+                            <div className={`services-extra ${servicesExpanded ? 'services-extra--open' : ''}`}>
+                                <ul>
+                                    <li><Link to="/products">Car Stereo Upgrade</Link></li>
+                                    <li><Link to="/products">Sound Horns</Link></li>
+                                    <li><Link to="/products">Smart Lock Systems</Link></li>
+                                    <li><Link to="/products">Car Batteries</Link></li>
+                                    <li><Link to="/products">Alloy Wheels &amp; LEDs</Link></li>
+                                </ul>
+                            </div>
+
+                            <button
+                                className="services-toggle"
+                                onClick={() => setServicesExpanded(prev => !prev)}
+                                aria-label={servicesExpanded ? 'Show fewer services' : 'Show more services'}
+                            >
+                                {servicesExpanded ? <FaChevronUp size={11} /> : <FaChevronDown size={11} />}
+                            </button>
                         </div>
+
                         <div className="footer-col">
                             <h4>Contact</h4>
                             <ul>
-                                <li><a href="tel:(04)271 1275"><FaPhoneAlt size={11} /> (04)271 1275</a></li>
+                                <li><a href="tel:+(04)271 1275"><FaPhoneAlt size={11} /> +(04)271 1275</a></li>
                                 <li><a href="tel:+971502292861"><FaPhoneAlt size={14} /> +971 50 229 2861</a></li>
                                 <li><a href="mailto:carplexdxb@gmail.com"><FaEnvelope size={14} /> carplexdxb@gmail.com</a></li>
                                 <li><span><FaMapMarkerAlt size={14} /> Ras Al Khor, Dubai</span></li>
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
+
                 <div className="footer-bottom">
                     <div className="footer-copyright">
                         <p>&copy; {new Date().getFullYear()} Carplex Car Accessories LLC. All rights reserved.</p>
@@ -59,10 +81,8 @@ const Footer = () => {
                     <div className="social-links">
                         <a href="https://www.instagram.com/carplex_accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link" aria-label="Instagram"><FaInstagram /></a>
                         <a href="#!" className="social-link" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="#!" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
-                        <a href="#!" className="social-link" aria-label="TikTok"><FaTiktok /></a>
+                        <a href="https://wa.me/971502292861" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
                     </div>
-
                 </div>
             </div>
         </footer>
