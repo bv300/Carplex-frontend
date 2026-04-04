@@ -1,7 +1,9 @@
 .artistic-parallax-slider {
   width: 100%;
-  height: 100vh; /* Fallback for older browsers */
-  height: 100dvh; /* Dynamic viewport height fixed for mobile address bars */
+  height: 100vh;
+  /* Fallback for older browsers */
+  height: 100dvh;
+  /* Dynamic viewport height fixed for mobile address bars */
   background: #000;
   position: relative;
   overflow: hidden;
@@ -219,12 +221,36 @@
 
 @media (max-width: 768px) {
   .artistic-parallax-slider {
-    height: 85vh;
-    height: 85dvh;
+    height: 100svh;
+    /* svh = small viewport height, best for mobile browsers */
+    height: 100dvh;
+  }
+
+  .parallax-bg {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    /* fixes iOS fixed attachment bug */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .slide-content {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .swiper,
+  .swiper-slide {
+    height: 100%;
+    width: 100%;
   }
 
   .slide-title {
-    font-size: 2.8rem;
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    margin-bottom: 20px;
   }
 
   .swiper-button-next,
@@ -233,8 +259,9 @@
   }
 
   .slide-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 4px;
+    margin-bottom: 16px;
   }
 }
 
@@ -246,23 +273,53 @@
   }
 
   .slide-title {
-    font-size: 2.2rem;
-    margin-bottom: 25px;
+    font-size: 1.9rem;
+    margin-bottom: 14px;
   }
 
   .slide-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .slide-text {
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .slide-btn {
+    padding: 11px 20px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .artistic-parallax-slider {
+    height: 100svh;
+    height: 100dvh;
+  }
+
+  .parallax-bg {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .slide-title {
+    font-size: clamp(1.8rem, 9vw, 2.4rem);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .slide-subtitle {
+    font-size: 0.78rem;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
   }
 
   .slide-btn {
     padding: 12px 24px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
   }
 }
