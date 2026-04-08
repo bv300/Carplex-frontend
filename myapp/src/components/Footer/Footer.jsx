@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaTiktok, FaPhonePlain, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import './Footer.css';
 
 
@@ -57,10 +57,9 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="social-links">
-                        <a href="#!" className="social-link" aria-label="Instagram"><FaInstagram /></a>
-                        <a href="#!" className="social-link" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="#!" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
-                        <a href="#!" className="social-link" aria-label="TikTok"><FaTiktok /></a>
+                        <a href="https://www.instagram.com/carplex_accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link" aria-label="Instagram"><FaInstagram /></a>
+                        <a href="https://www.facebook.com/share/18UB5SKYLf/?mibextid=wwXIfr" className="social-link" aria-label="Facebook"><FaFacebook /></a>
+                        <a href="https://wa.me/971502292861" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
                     </div>
 
                 </div>
