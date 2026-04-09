@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import {
     FaMobileAlt, FaCamera, FaChair, FaMagic,
     FaTint, FaGem, FaAward, FaShieldAlt,
