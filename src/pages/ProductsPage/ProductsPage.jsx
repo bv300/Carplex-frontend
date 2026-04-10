@@ -104,18 +104,18 @@ const products = [
         ],
     },
     {
-        img: '/assets/Alloy-Wheels-LEDs.png',
-        title: ['Alloy Wheels ', '& LEDs'],
-        desc: 'Give your car an upgraded, aggressive stance and bright clear vision with our premium alloy wheels and advanced LED lighting retrofits. Custom tailored sizes for an exact fit.',
+        img: '/assets/LED-Lights.png',
+        title: ['LED Lighting ', ' Upgrade'],
+        desc: 'Upgrade your car’s lighting with advanced LED technology for a sharper, more aggressive look and crystal-clear visibility. Our LED retrofit solutions are custom-fitted to ensure perfect compatibility and performance.',
         icon: <FaMagic />,
         heading: 'Why It Matters',
         points: [
-            'Dramatically improves the exterior aesthetics and curb appeal of your vehicle',
-            'Lighter alloy wheels can improve handling, acceleration, and braking performance',
-            'Brighter LED lights offer much better nighttime visibility for safer driving',
-            'Modern LED conversions give a premium, contemporary look to older cars',
-            'Longer-lasting than traditional halogen bulbs, saving maintenance costs',
-            'Endless styles and finishes to suit personal taste'
+            'Enhances your vehicle’s overall look with a modern, premium appearance',
+            'Provides brighter and clearer illumination for improved nighttime visibility',
+            'Increases driving safety with better road coverage and quicker light response',
+            'Energy-efficient compared to traditional halogen bulbs',
+            'Longer lifespan, reducing frequent replacements and maintenance costs',
+            'Available in multiple styles and color temperatures to match your preference'
         ],
         reverse: true,
     },
