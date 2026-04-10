@@ -65,7 +65,7 @@ const services = [
     { img: '/assets/seat-covers-a.png',      title: 'Premium Seat Covers',  desc: 'Luxury leather & diamond-stitched custom covers that transform your cabin.'          },
     { img: '/assets/Upholstery-Works-c.png',  title: 'Upholstery Works',     desc: 'Professional restoration for seats, door panels and interior trim.'                  },
     { img: '/assets/car-tinting.png',      title: 'Premium Car Tinting',  desc: 'UV & heat-rejecting films for privacy, comfort and style.'                          },
-    { img: '/assets/Alloy-Wheels-LEDs.png',      title: 'Alloy Wheels & LEDs',  desc: 'Upgraded look with premium alloys and energy-efficient LED lighting.'                },
+    { img: '/assets/LED-Lights.png',      title: 'LED Lighting Upgrade',  desc: 'Upgraded look with energy-efficient, premium LED lighting for enhanced visibility and modern style.'                },
     { img: '/assets/sound-horns.png',      title: 'Sound Horns',          desc: 'Dual-tone & multi-tone horn systems for enhanced audibility and modern style.'        },
     { img: '/assets/car-stereo.png',       title: 'Car Stereo Upgrade',   desc: 'High-fidelity speakers, subwoofers, and amps for immersive sound.'                   },
     { img: '/assets/lock-system.png',      title: 'Smart Lock Systems',   desc: 'Keyless entry, alarm features and smart security for maximum protection.'            },

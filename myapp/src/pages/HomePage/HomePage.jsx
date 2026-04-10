@@ -85,7 +85,7 @@ const services = [
         desc: 'High-quality window tinting with UV protection, heat rejection, and privacy — using top-grade films from leading brands.',
     },
     {
-        img: '/assets/hero-banner.png',
+        img: '/assets/LED-Lights.png',
         icon: <FaGem />,
         title: 'Alloy Wheels & LED Lights',
         desc: 'Upgrade your look with premium alloy wheels and energy-efficient LED lights for enhanced style and visibility on the road.',
